@@ -7,10 +7,12 @@ gem 'rails', '3.2.8'
 
 gem 'rails-api'
 
-gem 'sqlite3'
+gem 'pg'
+gem 'activerecord-postgres-hstore'
 
 group :development,:test do
   gem 'pry'
+  gem 'minitest'
 end
 
 
