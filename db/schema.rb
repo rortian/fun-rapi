@@ -11,11 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120912051116) do
+ActiveRecord::Schema.define(:version => 20120923064359) do
 
   create_table "svgs", :force => true do |t|
     t.string "name"
     t.hstore "tags"
   end
+
+  add_index "svgs", ["name"], :name => "svg_names", :unique => true
 
 end
